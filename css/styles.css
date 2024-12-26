@@ -8,50 +8,70 @@
 
 html {
   font-size: 62.5%;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter";
-  background-image: url("/assets/pic-4.jpg");
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 header {
   backdrop-filter: blur(30px);
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 4%;
+  padding: 2rem 5%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 header .logo {
   display: flex;
   align-items: center;
-  column-gap: 1rem;
+  column-gap: 1.5rem;
   cursor: pointer;
 }
 header .logo h2 {
   font-size: 2.5rem;
+  color: #fff;
 }
 header .logo img {
   width: 6rem;
 }
 header .navbar-content {
   display: flex;
-  column-gap: 3rem;
+  column-gap: 3.5rem;
 }
 header .navbar-content a {
   color: #fff;
   font-size: 2.4rem;
+  font-family: "Poppins";
 }
 header .right-icons {
   display: flex;
-  column-gap: 1.5rem;
+  column-gap: 2.5rem;
 }
 header .right-icons i {
   color: #fff;
   font-size: 2.4rem;
+}
+
+.home .box {
+  min-height: 100vh;
+  background: url("/assets/pic-10.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.home .box .content {
+  width: 50rem;
+}
+.home .box .content h1 {
+  font-size: 4rem;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
